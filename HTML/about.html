@@ -9,32 +9,46 @@
   <link rel="stylesheet" href="/CSS/menu.css">
   <title>Recast: About</title>
 </head>
-<body>
-  <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-      <div>
-        <div>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/HTML/about.html">About</a></li>
-            <li><a href="/HTML/calculator.html">Calculator</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <header class="showcase">
-    <div class="container showcase-inner">
-      <h1>About</h1>
-      <p>About text</p>
-      <a href="#" class="btn">Read More</a>
+
+
+
+<body>
+  <nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!-- Hamburger for navigation -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <ul id="menu">
+        <a href="/index.html"><li>Home</li></a>
+        <a href="/HTML/about.html"><li>About</li></a>
+        <a href="/HTML/calculator.html"><li>Calculator</li></a>
+        <a href="/HTML/costCalculator.html"><li>Cost Calculator</li></a>
+      </ul>
     </div>
-  </header>
+  </nav>
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
 
